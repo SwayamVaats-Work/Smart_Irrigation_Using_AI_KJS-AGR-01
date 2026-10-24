@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farm Weather & Location</title>
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+
+  <header>
+    <h1>Weather & Monitoring</h1>
+  </header>
+
+  <div class="main-wrapper">
+    
+    <aside class="sidebar">
+      <h3>Quick Weather Info</h3>
+      <ul>
+        <li><strong>Location:</strong> Pune, MH</li>
+        <li><strong>Current Temp:</strong> 29°C</li>
+        <li><strong>Humidity:</strong> 64%</li>
+        <li><strong>Wind:</strong> 12 km/h NE</li>
+        <li><strong>Rain Forecast:</strong> 10%</li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section class="weather-section">
+        <h2>Today's Weather Forecast</h2>
+        <hr>
+
+        <div class="frame-container">
+          <div class="frame-card">
+            <h3>Live IMD Weather Updates</h3>
+            <iframe 
+              src="https://mausam.imd.gov.in/" 
+              title="India Meteorological Department Weather Forecast"
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <div class="frame-card">
+            <h3>Farm Location & Surroundings</h3>
+            <iframe 
+              src="https://maps.google.com/maps?q=Pune,Maharashtra&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              title="Google Maps Farm Location"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <footer>
+    &copy; KJ Somaiya College of Engineering - Smart Irrigation Advisory 
+    <br>
+    <a href="mailto:swayam.vaats@somaiya.edu">swayam.vaats@somaiya.edu</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soil Moisture & Irrigation Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+
+    <header style="background-color: #156b51; padding: 20px; border-bottom: 4px solid #e67e22;">
+        <h1 style="color: #ecf0f1; text-align: center; margin: 0;">Soil Moisture & Irrigation Table</h1>
+    </header>
+
+    <main>
+        <table>
+            <caption><h2>Irrigation recommendations for multiple plots</h2></caption>
+            <thead>
+                <tr>
+                    <th>Plot ID</th>
+                    <th>Farmer Name</th>
+                    <th>Soil Moisture (%)</th>
+                    <th>Weather</th>
+                    <th>Irrigation Recommendation</th>
+                    <th>Water Requirement</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>P-101</td>
+                    <td rowspan="2">Rajesh Kumar</td>
+                    <td class="numeric">22%</td>
+                    <td>Sunny</td>
+                    <td>Immediate Drip Irrigation</td>
+                    <td class="numeric">1,200 L</td>
+                </tr>
+                
+                <tr>
+                    <td>P-102</td>
+                    <td class="numeric">48%</td>
+                    <td>Partly Cloudy</td>
+                    <td>Normal Schedule</td>
+                    <td class="numeric">600 L</td>
+                </tr>
+                
+                <tr>
+                    <td>P-103</td>
+                    <td>Anita Sharma</td>
+                    <td class="numeric">72%</td>
+                    <td>Overcast / Rain Expected</td>
+                    <td>Postpone Irrigation</td>
+                    <td class="numeric">0 L</td>
+                </tr>
+                
+                <tr>
+                    <td>P-104</td>
+                    <td>Suresh Patil</td>
+                    <td class="numeric">31%</td>
+                    <td>Sunny & Windy</td>
+                    <td>Moderate Sprinkler Irrigation</td>
+                    <td class="numeric">850 L</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td colspan="5" style="text-align: right;">Total Daily Water Requirement:</td>
+                    <td class="numeric">2,650 L</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    
+    <footer>
+        <hr>
+        &copy; KJ Somaiya College of Engineering - Smart Irrigation Advisory
+        <br>
+        <a href="mailto:swayam.vaats@somaiya.edu">swayam.vaats@somaiya.edu</a>
+    </footer>
+
+</body>
+</html>

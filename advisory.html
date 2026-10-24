@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Irrigation Advisory</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .advisory-card {
+                width: 450px;
+                border: 1px solid #d1d8e0;                     
+                border-radius: 10px;                           
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);    
+                padding: 20px;                                 
+                background-color: #ffffff;
+                margin: 20px 0;
+            }
+
+            .advisory-card ul {
+                list-style-type: none;                         
+                padding: 0;
+                margin: 0;
+            }
+
+            .advisory-card ul li {
+                padding: 10px 12px;                           
+                border-bottom: 1px solid #f1f2f6;
+                border-radius: 5px;
+                transition: background-color 0.2s, color 0.2s;
+            }
+
+            
+            .advisory-card ul li:hover {
+                background-color: #e8f5e9;
+                color: #2e7d32;                                
+            }
+        </style>
+    </head>
+
+    <body>
+        <header style="background-color: #156b51; padding: 20px; border-bottom: 4px solid #e67e22;">
+            <h1 style="color: #ecf0f1; text-align: center; margin: 0;">Advisory</h1>
+        </header>
+
+        <main>
+            <h2>Today's irrigation recommendation</h2>
+            <div class="advisory-card">
+                <ul>
+                    <li><b>Plot ID: </b>#SC-MH-204</li>
+                    <li><b>Farmer Name: </b>Ramesh Patil</li>
+                    <li><b>Soil Moisture: </b>38% (Target: 60%-70%)</li>
+                    <li><b>Recommended Irrigation Duration: </b>2 Hours 45 Minutes</li>
+                    <li><b>Water Stress Level: </b>High (Crop Water Stress Index: 0.68)</li>
+                </ul>
+            </div>
+
+            <h3><b><mark>Important Notice</mark></b></h3>
+            <ol>
+                <li>Grand growth phase is 120-240 days after planting, which is the period of
+                peak water demand for sugarcane.</li>
+                <li>The recommendation is derived using real-time soil moisture sensors placed
+                at root depths of 30 cm and 60 cm, cross-referenced with today's local 
+                evapotranspiration (ET<sub>c</sub>) rate of 5.8 mm/day.</li>
+                <li>Schedule irrigation run between 06:00 AM - 08:45 AM or after 05:30 PM to 
+                minimize evaporation loss.</li>
+            </ol>
+        </main>
+
+        <footer>
+            <hr>
+            &copy; KJ Somaiya College of Engineering - Smart Irrigation Advisory 
+            <br>
+            <a href="mailto:swayam.vaats@somaiya.edu">swayam.vaats@somaiya.edu</a>
+        </footer>
+    </body>
+</html>

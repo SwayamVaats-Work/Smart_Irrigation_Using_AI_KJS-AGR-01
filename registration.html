@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farmer Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body style="margin: 0; padding: 0;">
+
+  <header style="background-color: #156b51; padding: 20px; border-bottom: 4px solid #e67e22;">
+            <h1 style="color: #ecf0f1; text-align: center; margin: 0;">Farm Registration</h1>
+        </header>
+
+  <form action="#" method="POST" enctype="multipart/form-data">
+    <h2>Farmer Registration Form</h2>
+
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <div>
+        <label for="farmer-name">Full Name:</label>
+        <input 
+          type="text" 
+          id="farmer-name" 
+          name="farmer_name" 
+          placeholder="e.g., Ramesh Kumar" 
+          required 
+          autofocus>
+      </div>
+
+      <div>
+        <label for="mobile">Mobile Number:</label>
+        <input 
+          type="tel" 
+          id="mobile" 
+          name="mobile" 
+          placeholder="10-digit mobile number" 
+          pattern="[0-9]{10}" 
+          title="Please enter a valid 10-digit mobile number" 
+          required>
+      </div>
+
+      <div>
+        <label for="email">Email Address:</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="farmer@example.com" 
+          required>
+      </div>
+
+      <div>
+        <label for="village">Village / Town:</label>
+        <input 
+          type="text" 
+          id="village" 
+          name="village" 
+          placeholder="Enter village name" 
+          required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Farm & Crop Information</legend>
+
+      <div>
+        <label for="plot-id">Plot ID / Survey No.:</label>
+        <input 
+          type="text" 
+          id="plot-id" 
+          name="plot_id" 
+          placeholder="e.g., PLOT-1234" 
+          pattern="[A-Za-z0-9\-]+" 
+          title="Alphanumeric characters and hyphens only" 
+          required>
+      </div>
+
+      <div>
+        <label for="crop-stage">Crop Stage:</label>
+        <select id="crop-stage" name="crop_stage" required>
+          <option value="">-- Select Crop Stage --</option>
+          <option value="sowing">Sowing / Germination</option>
+          <option value="vegetative">Vegetative</option>
+          <option value="flowering">Flowering</option>
+          <option value="harvesting">Maturity / Harvesting</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="soil-type">Soil Type:</label>
+        <select id="soil-type" name="soil_type" required>
+          <option value="">-- Select Soil Type --</option>
+          <option value="alluvial">Alluvial Soil</option>
+          <option value="black">Black Soil (Regur)</option>
+          <option value="red">Red & Yellow Soil</option>
+          <option value="laterite">Laterite Soil</option>
+          <option value="sandy">Sandy / Arid Soil</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="irrigation">Irrigation Method:</label>
+        <select id="irrigation" name="irrigation_method" required>
+          <option value="">-- Select Irrigation Method --</option>
+          <option value="drip">Drip Irrigation</option>
+          <option value="sprinkler">Sprinkler System</option>
+          <option value="surface">Surface / Flood Irrigation</option>
+          <option value="rainfed">Rainfed</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="reg-date">Registration / Sowing Date:</label>
+        <input 
+          type="date" 
+          id="reg-date" 
+          name="registration_date" 
+          required>
+      </div>
+
+      <div>
+        <label for="farm-photo">Farm Photo:</label>
+        <input 
+          type="file" 
+          id="farm-photo" 
+          name="farm_photo" 
+          accept="image/*" 
+          required>
+      </div>
+    </fieldset>
+
+    <button type="submit">Register Farmer</button>
+  </form>
+
+  <footer>
+            <hr>
+            &copy; KJ Somaiya College of Engineering - Smart Irrigation Advisory 
+            <br>
+            <a href="mailto:swayam.vaats@somaiya.edu">swayam.vaats@somaiya.edu</a>
+        </footer>
+
+</body>
+</html>

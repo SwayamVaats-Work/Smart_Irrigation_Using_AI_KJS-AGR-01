@@ -1,0 +1,20 @@
+.gallery-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-container img {
+    width: 180px;          
+    height: 240px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin: 10px;          
+    border-radius: 4px;
+    transition: transform 0.3s ease, border-color 0.3s ease; 
+}
+
+.gallery-container img:hover {
+    transform: scale(1.08); 
+    border-color: #e67e22;
+    cursor: pointer;
+}

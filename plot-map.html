@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farm Plot Navigation</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+  img {
+  display: block;
+  margin: 0 auto;
+  }
+
+  main > p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .plot-details {
+    display: block;                              
+    width: 90%;                                  
+    max-width: 1000px;                          
+    margin: 20px auto;                           
+    padding: 20px;                               
+    border: 1px solid #dcdcdc;                   
+    border-radius: 8px;                          
+    background-color: #daeee4;                   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    
+    text-align: center;                          
+    box-sizing: border-box;                      
+  }
+
+  .plot-details h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #156b51;
+    padding-bottom: 6px;
+  }
+
+  .plot-details p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+
+  <header style="background-color: #156b51; padding: 20px; border-bottom: 4px solid #e67e22;">
+  <h1 style="color: #ecf0f1; text-align: center; margin: 0;">Farm Plot Interactive Map</h1>
+  </header>
+
+  <main>
+    <p>Click on any plot on the map below to view its details.</p>
+    
+    <img 
+      src="Images and videos/farm-map.jpg" 
+      alt="Interactive Map of the Farm" 
+      usemap="#farm-plots" 
+      width="600" 
+      height="400">
+
+    <map name="farm-plots">
+      <area 
+        shape="rect" 
+        coords="20,20,180,380" 
+        href="#plotA" 
+        alt="Navigate to Plot A details"
+        title="Plot A (Wheat)">
+
+      <area 
+        shape="circle" 
+        coords="300,200,80" 
+        href="#plotB" 
+        alt="Navigate to Plot B details"
+        title="Plot B (Corn)">
+
+      <area 
+        shape="rect" 
+        coords="420,20,580,380" 
+        href="#plotC" 
+        alt="Navigate to Plot C details"
+        title="Plot C (Vegetables)">
+    </map>
+    
+    <div style="margin-top: 25px;">
+      <div class="plot-details" id="plotA">
+        <h2>Plot A Details</h2>
+        <p><strong>Crop:</strong> Wheat</p>
+        <p><strong>Soil Condition:</strong> Moist, Loamy</p>
+        <p><strong>Status:</strong> Ready for harvest in 2 weeks.</p>
+      </div>
+
+      <div class="plot-details" id="plotB">
+        <h2>Plot B Details</h2>
+        <p><strong>Crop:</strong> Corn</p>
+        <p><strong>Soil Condition:</strong> Fertile, well-drained</p>
+        <p><strong>Status:</strong> Early vegetative stage.</p>
+      </div>
+
+      <div class="plot-details" id="plotC">
+        <h2>Plot C Details</h2>
+        <p><strong>Crop:</strong> Mixed Vegetables</p>
+        <p><strong>Soil Condition:</strong> Rich compost bed</p>
+        <p><strong>Status:</strong> Active irrigation.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <hr>
+    &copy; KJ Somaiya College of Engineering - Smart Irrigation Advisory 
+    <br>
+    <a href="mailto:swayam.vaats@somaiya.edu">swayam.vaats@somaiya.edu</a>
+  </footer>
+
+</body>
+</html>
